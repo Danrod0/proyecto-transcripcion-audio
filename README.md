@@ -23,14 +23,13 @@ The repository is organized to support reproducible research and collaborative d
 
 ## 📁 Repository Structure
 
-```
-proyecto-transcripcion-audio-final/
-├── data/ # Raw, processed, and example datasets
-├── notebooks/ # Jupyter notebooks grouped by uncertainty method
-├── src/ # Modular Python source code
-├── results/ # Metrics, plots, logs, and outputs
-└── docs/ # Methodology, documentation, and references
-```
+The notebooks are organized by uncertainty estimation method:
+
+- `montecarlo-dropout/` — Monte Carlo Dropout experiments  
+- `temperature-scaling/` — Temperature scaling calibration experiments  
+- `feature-density/` — Feature density–based uncertainty estimation
+- `feature-density-model-histograms/` — Feature-density–based histogram-ensemble uncertainty estimation
+
 Each directory includes its own `README.md` to guide users.
 
 ---
@@ -48,17 +47,10 @@ conda activate whisper-uncertainty
 
 ## ▶️ Running the Notebooks
 
-The notebooks are organized by uncertainty estimation technique:
-```
-notebooks/
-├── uncertainty-mc-dropout/
-├── temperature-scaling/
-└── feature-densities/
-```
 Each subfolder includes:
 
-- The main notebook(s) for experiments  
-- Auxiliary notebooks when needed  
+- The main notebook for experiments  
+- Auxiliary scripts when needed  
 - A `README.md` with method-specific instructions  
 
 ---
